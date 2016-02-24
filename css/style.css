@@ -268,8 +268,8 @@ i:hover {
     display: block;
    height: 100vh;
    padding:15% 0;
-   margin: auto 0;
-  
+
+  position: relative;
     background-image: url(../img/sci-fi.jpg); /* Добавляем фон */
      background-position: center top, center top;
     background-repeat: no-repeat, repeat;
@@ -279,11 +279,26 @@ i:hover {
    
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #intro {display: block;
+  height: 850px;
+}   
+ }
+
+ @media screen and (max-width: 768px) {
+  #intro {display: block;
+  height: 850px;
+}   
+ }
+
+
 
 #about {
     display: block;
     height: 100vh;
     width: 100%;
+     padding:15% 0;
+    position: relative;
     background-color: lightcyan;
      background-image: url(../img/futuristic_paris.jpg); /* Добавляем фон */
     background-repeat: no-repeat;
@@ -315,24 +330,25 @@ i:hover {
    
 }
 
-#fmp {
+#welcome {
 
     display: block;
     width: 970px;
     padding-top: 20px;
-    height: 480px;
+
     background: rgba(56,56,56,.9);
+    position: absolute;
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  #fmp {
+  #welcome {
   width: 100%;
 }   
  }
 
  @media screen and (max-width: 768px) {
-  #fmp {
+  #welcome {
   width: 100%;
 }   
  }
@@ -386,3 +402,16 @@ i:hover {
     text-indent: 1.5em; /* Отступ первой строки */
     text-align: justify; /* Выравнивание по ширине */
    }
+
+#about_me {
+    background: rgba(56,56,56,.9);
+    font-family: AlexBrush-Regular; /* Гарнитура шрифта */
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+#about_left, #about_right {
+    background: rgba(56,56,56,.9);
+     color: white;
+}
